@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="theme-color"
+content="#07172f">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Zyaa 💙</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!--====================
+BACKGROUND
+=====================-->
+
+<div class="background"></div>
+
+<!--====================
+PARTICLES
+=====================-->
+
+<div id="stars"></div>
+
+<!-- ==========================
+LOADING
+========================== -->
+
+<section class="loading" id="loading">
+
+    <div class="loading-box">
+
+        <h1>PROJECT ZYAA 💙</h1>
+
+        <p>Mempersiapkan sesuatu yang spesial...</p>
+
+        <div class="loading-bar">
+
+            <div id="loadingProgress"></div>
+
+        </div>
+
+        <span id="loadingPercent">0%</span>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+PIN
+========================== -->
+
+<section class="pin-screen" id="pinScreen">
+
+    <div class="pin-box">
+
+        <h2>🔐</h2>
+
+        <h3>Masukkan Tanggal Spesial</h3>
+
+        <p>Petunjuk: DDMMYY 💙</p>
+
+        <input
+            type="password"
+            id="pinInput"
+            maxlength="6"
+            placeholder="••••••"
+            inputmode="numeric"
+        >
+
+        <button id="pinBtn">
+            Buka Hadiah 🎁
+        </button>
+
+        <p id="pinMessage"></p>
+
+    </div>
+
+</section>
+
+<!--====================
+OPENING
+=====================-->
+
+<section
+class="opening"
+
+style="display:none;">
+
+<h1>
+Happy Birthday
+</h1>
+
+<p>
+
+Website ini dibuat khusus untuk seseorang
+yang paling spesial di hidupku.
+
+</p>
+
+<button id="startBtn">
+
+Buka Hadiah 🎁
+
+</button>
+
+</section>
+<!--====================
+LETTER
+=====================-->
+
+<section class="letter" id="letter">
+
+<div class="paper">
+
+<h2>Hai Cantikku ❤️</h2>
+
+<p>
+
+Sebelum semuanya dimulai...
+
+Aku cuma ingin mengucapkan
+
+Selamat Ulang Tahun.
+
+Terima kasih sudah hadir di hidupku.
+
+Website ini adalah hadiah kecil dariku.
+
+Semoga kamu menyukainya.
+
+</p>
+
+<button id="nextBtn">
+
+Lanjut ➜
+
+</button>
+
+</div>
+
+</section>
+<!--====================
+STORY
+=====================-->
+
+<section class="story" id="story">
+
+<div class="story-box">
+
+<h2>Sebelum kita lanjut... 💙</h2>
+
+<p id="storyText">
+
+Sebelum kita melanjutkan ini
+
+Aku cuma ingin mengucapkan satu hal.
+
+Terima kasih sudah hadir di hidupku :3.
+</p>
+
+<p class="storyHint">
+🌙 Baca pelan-pelan ya..
+
+</p>
+
+<button id="storyBtn">
+iyaa sayangg.
+
+</button>
+
+</div>
+
+</section>
+
+<!--====================
+MEMORY BOX
+=====================-->
+
+<section class="memory" id="memory">
+
+    <div class="memory-box">
+
+        <h2>🎁 Masih Ada Hadiah...</h2>
+
+<div class="gift-area">
+  
+<div id="giftBox">
+
+    <div class="gift-lid">
+
+        <div class="gift-ribbon-v"></div>
+
+        <div class="gift-ribbon-h"></div>
+
+    </div>
+
+    <div class="gift-body">
+
+        <div class="gift-ribbon-v"></div>
+
+        <div class="gift-ribbon-h"></div>
+
+    </div>
+
+</div>
+
+<p id="giftMessage"></p>
+</div>
+<p class="giftHint">
+
+💙 Sentuh kotaknya untuk membukanya
+
+</p>
+
+<button id="memoryNextBtn">
+
+Lanjut ➜
+
+</button>
+
+</div>
+
+</section>
+
+<!--====================
+GALERI
+=====================-->
+
+<section class="gallery" id="gallery">
+  
+<div class="chapter">
+
+<p id="chapterText"></p>
+
+<div class="progress">
+
+<div class="progress-bar" id="progressBar"></div>
+
+</div>
+
+</div>
+<div class="photo-card">
+
+<img
+id="photo"
+src="Images/foto1.jpg">
+
+<h2 id="photoTitle">
+
+Kenangan Pertama 💙
+
+</h2>
+
+<p id="photoDesc">
+
+"tanggal 10/06/24 hari di mana kamu tamat SMP
+(hehe lucunyaa)"
+
+</p>
+
+<button id="photoBtn">
+
+Lanjut ➜
+
+</button>
+
+</div>
+
+</section>
+<!--====================
+SECRET LETTER
+=====================-->
+
+<section class="secret" id="secret">
+
+    <div class="envelope" id="envelope">
+
+        <div class="envelope-back"></div>
+
+        <div class="letter-paper" id="letterPaper">
+
+            <h3>Untuk Zyaa 💙</h3>
+
+            <div id="secretText"></div>
+
+            <button id="nextLetterBtn">
+                Lanjut Membaca ➜
+            </button>
+
+        </div>
+
+        <div class="envelope-front"></div>
+
+        <div class="envelope-flap"></div>
+
+    </div>
+
+    <p id="envelopeHint">
+        💙 Sentuh amplopnya ya...
+    </p>
+
+</section>
+<!-- ==========================
+     BIRTHDAY
+========================== -->
+<section class="birthday" id="birthday">
+
+<div class="birthday-box">
+
+<h1 id="birthdayTitle">
+🎂 Happy Birthday
+</h1>
+
+<h2 id="birthdayName">
+Zyaa 💙
+</h2>
+
+<p id="birthdayText">
+Hari ini adalah hari yang paling spesial.
+Karena seseorang yang sangat special sudah semakin dewasaa.
+</p>
+
+<button id="birthdayBtn">
+Rayakan 🎉
+</button>
+
+<div id="birthdayGlow"></div>
+
+<div id="birthdayCake">
+
+<div class="candles">
+<span class="candle" id="candle1">🕯️</span>
+<span class="candle" id="candle2">🕯️</span>
+<span class="candle" id="candle3">🕯️</span>
+</div>
+
+🎂
+
+</div>
+
+<p id="blowText"></p>
+
+<button id="blowBtn">
+🎂 Tiup Lilin
+</button>
+
+</div>
+
+</section>
+<!-- ==========================
+     ENDING
+========================== -->
+
+<section class="ending" id="ending">
+<div id="confettiLeft"></div>
+<div id="confettiRight"></div>
+<div class="ending-box">
+
+<h2>💙 Terima Kasih</h2>
+
+<img id="endingPhoto" src="Images/foto4.jpg" alt="Zyaa">
+
+<div id="confettiContainer"></div>
+
+<div id="heartContainer"></div>
+
+<p id="endingText">
+
+Walaupun kita belum punya foto bersama...
+
+Semoga suatu hari nanti kita bisa membuat lebih banyak kenangan.
+
+Terima kasih sudah hadir di hidupku.
+
+</p>
+
+<h3>
+
+Selamat Ulang Tahun 🌙
+
+</h3>
+
+<p id="endingName">
+— Ade Ridho ❤️
+</p>
+
+<p id="endingQuote">
+
+Website ini dibuat
+dengan penuh rasa sayang.
+
+💙
+
+</p>
+
+</div>
+
+</section>
+<!--====================
+AUDIO
+=====================-->
+
+<audio
+id="bgMusic"
+loop>
+
+<source src="Music/lagu.mp3"
+type="audio/mpeg">
+
+</audio>
+
+<audio id="clickSound">
+    <source src="Music/click.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="magicSound">
+    <source src="Music/magic.mp3" type="audio/mpeg">
+</audio>
+
+<script src="loading.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
